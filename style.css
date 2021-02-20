@@ -1,0 +1,84 @@
+body{
+    font-family: Arial,sans-serif;
+}
+.header{
+    background:  #445161;
+    padding: 25px 0;
+    color: #FFFFFF;
+}
+.conteiner{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.wrapper_fl_spbw{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper_header_right{
+    width: 472px;
+    height: 217px;
+    background: #FFFFFF;
+}
+.h1_header{
+    font-size: 60px; 
+    margin-bottom: 40px;
+}
+.header_list-item{
+    font-size: 20px;
+}
+.header_list-item:not(:last-of-type){
+    margin-bottom: 10px;
+}
+
+.header_list-item::before{
+    content: url(img/check.png);
+    margin-right: 5px;
+}
+.about{
+    padding: 45px 0;
+}
+.h2_about{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #445161;
+}
+.p_about{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.wrapper_about_left{
+    width: 650px;
+}
+.wrapper_about_right{
+    width: 430px;
+    height: 245px;
+    background: #445161;
+}
+.pluses{
+    background:  #F5F5F5;
+    padding: 25px 0;
+}
+.h2_pluses{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.pluses_list-item{
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    display: flex;
+}
+.pluses_list-item::before{
+    content: url(img/plus_icon.png);
+    margin-right: 5px;
+    display: block;
+    
+}
+.wrapper_pluses:not(:last-of-type){
+    margin-right: 35px;
+}
