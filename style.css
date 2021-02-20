@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.wrapper_header_right{
+.wrapper_header_img{
     width: 472px;
     height: 217px;
     background: #FFFFFF;
@@ -52,33 +52,77 @@ body{
 .wrapper_about_left{
     width: 650px;
 }
-.wrapper_about_right{
+.wrapper_about_img{
     width: 430px;
     height: 245px;
     background: #445161;
 }
 .pluses{
     background:  #F5F5F5;
-    padding: 25px 0;
+    padding: 25px 0 55px;
 }
 .h2_pluses{
     text-align: center;
     font-size: 30px;
     margin-bottom: 25px;
+    color: #445161;
 }
 .pluses_list-item{
     font-size: 16px;
     color: #333333;
     line-height: 1.5;
-    margin-bottom: 35px;
     display: flex;
 }
+
+.pluses_list-item:not(:last-of-type){
+    margin-bottom: 35px;
+}
+
 .pluses_list-item::before{
     content: url(img/plus_icon.png);
     margin-right: 5px;
     display: block;
+    margin-top: 8px;
     
 }
 .wrapper_pluses:not(:last-of-type){
     margin-right: 35px;
+}
+.screenshots{
+    padding: 25px 0 50px;
+}
+.h2_screenshots{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 55px;
+    color: #445161;
+}
+.wrapper_screenshots_item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.article_screenshots{
+    width: 50%;
+}
+.figure_screenshots{
+    display: flex;
+}
+.img_screenshots{
+    width: 202px;
+    height: 153px;
+    background: #445161;
+    margin-right: 14px;
+}
+.h3_screenshots{
+    font-size: 24px;
+    color: #445161;
+    margin-bottom: 13px;
+}
+.p_screenshots{
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+}
+.p_screenshots:nth-of-type(-n+2){
+    margin-bottom: 27px;
 }
