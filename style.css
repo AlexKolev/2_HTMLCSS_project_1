@@ -34,13 +34,19 @@ body{
     content: url(img/check.png);
     margin-right: 5px;
 }
+
+.h2_main{
+    font-size: 30px;
+    color: #445161;
+}
+
 .about{
     padding: 45px 0;
 }
 .h2_about{
-    font-size: 30px;
     margin-bottom: 20px;
-    color: #445161;
+    /* font-size: 30px;
+    color: #445161; */
 }
 .p_about{
     font-size: 16px;
@@ -63,9 +69,9 @@ body{
 }
 .h2_pluses{
     text-align: center;
-    font-size: 30px;
     margin-bottom: 25px;
-    color: #445161;
+    /* font-size: 30px;
+    color: #445161; */
 }
 .pluses_list-item{
     font-size: 16px;
@@ -93,9 +99,9 @@ body{
 }
 .h2_screenshots{
     text-align: center;
-    font-size: 30px;
     margin-bottom: 55px;
-    color: #445161;
+    /* font-size: 30px;  
+    color: #445161; */
 }
 .wrapper_screenshots_item{
     display: flex;
@@ -103,6 +109,9 @@ body{
 }
 .article_screenshots{
     width: 50%;
+}
+.article_screenshots:nth-of-type(-n+2){
+    margin-bottom: 27px;
 }
 .figure_screenshots{
     display: flex;
@@ -123,6 +132,195 @@ body{
     color: #333333;
     line-height: 1.5;
 }
-.p_screenshots:nth-of-type(-n+2){
-    margin-bottom: 27px;
+.reviews{
+    background:  #F5F5F5;
+    padding: 25px 0 40px;
+}
+.h2_reviews{
+    text-align: center;
+    margin-bottom: 30px;
+    /* font-size: 30px;
+    color: #445161; */
+}
+.wrapper_reviews_item{
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+.article_reviews{
+    width: 49%;
+}
+.article_reviews:nth-of-type(-n+2){
+    margin-bottom: 22px;
+}
+.figure_reviews{
+    display: flex;
+}
+.figcaption_reviews{
+    background: #EBEBEB;
+    border-radius: 5px;
+    padding: 15px 10px 5px 15px;
+    position: relative;
+}
+.figcaption_reviews::after {
+    content: ''; 
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    border: 10px solid transparent;
+    border-right: 10px solid #EBEBEB;
+   }
+.img_reviews{
+    width: 66px;
+    height: 66px;
+    background: #445161;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.p_reviews{
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 14px;
+    color: #000000;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+.p_reviews_sign{
+    color: #989898;
+}
+.BuyNow{
+    padding: 45px 90px 50px;
+    justify-content: center;
+}
+.h2_BuyNow{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.wrapper_BuyNow{
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-end;
+}
+.sell_card_BuyNow{
+    background: #445161;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border: 1px solid #000;
+}
+.sell_card_BuyNow:not(:last-of-type){
+    margin-right: 45px;
+}
+.h3_BuyNow{
+    background: #445161;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    padding: 14px 0 7px;
+    
+}
+.h1_BuyNow_price{
+    font-size: 40px;
+    color: #445162;
+    text-align: center;
+    border-left: 2px solid #445161;
+    border-right: 2px solid #445161;
+    background: #FFFFFF;
+}
+.ol_BuyNow_list{
+    counter-reset: myCounter;
+    background: #445161;
+    color: #FFFFFF;
+}
+.ol_BuyNow_list_item{
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #445161;
+    padding: 0 8px 0 20px;
+}
+.ol_BuyNow_list_item:before {
+    counter-increment: myCounter;
+    content:counter(myCounter)".";
+    color: white;
+  }
+.button_sell_card_BuyNow{
+    margin: 19px;
+    border-radius: 5px;
+    font-size: 18px;
+    align-items: center;
+    color: #445161;
+    padding: 16px 0 9px;
+}
+.contacts{
+    background:  #445161;
+    padding: 25px 0 50px;
+    color: #FFFFFF;
+}
+.h2_contacts{
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.wrapper_contacts{
+    justify-content: center;
+}
+.wrapper_contacts_main_data{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 505px;
+    margin-right: 45px;
+}
+.inp_contacts{
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+.button_send_contacts{
+    margin: 0 180px;
+    border-radius: 5px;
+    font-size: 18px;
+    align-items: center;
+    color: #445161;
+    padding: 12px 0 7px;
+}
+.contacts_email{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.svg_contacts_social_data{
+    margin-bottom: -4px;
+}
+.contacts_social_data_list-item:not(:last-of-type){
+    margin-bottom: 18px;
+}
+.contacts_social_data_list-item:last-of-type{
+    margin-bottom: 50px;
+}
+.p_Copyright{
+    text-align: center;
+    background: #F5F5F5;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.3px;
+    color: #445162;
+    padding-top: 12px;
+}
+.wraper_contacts_social_icon{
+    display: flex;
+}
+.contacts_social_icon{
+    justify-content: center;   
+    display: flex;
+    align-items: center;
+    height: 51px;
+    width: 51px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    margin-right: 10px;
+}
+.fa{
+    color: #445162;
 }
