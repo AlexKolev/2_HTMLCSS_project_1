@@ -58,7 +58,7 @@ body{
 .wrapper_about_left{
     width: 650px;
 }
-.wrapper_about_img{
+.wrapper_about_video{
     width: 430px;
     height: 245px;
     background: #445161;
@@ -196,7 +196,6 @@ body{
     margin-bottom: 25px;
 }
 .wrapper_BuyNow{
-    /* display: flex; */
     justify-content: center;
     align-items: flex-end;
 }
@@ -277,6 +276,8 @@ body{
     line-height: 1.5;
     border-radius: 5px;
     margin-bottom: 18px;
+    resize: none;
+    font-family: Arial,sans-serif;
 }
 .button_send_contacts{
     margin: 0 180px;
@@ -311,16 +312,16 @@ body{
 .wraper_contacts_social_icon{
     display: flex;
 }
-.contacts_social_icon{
-    justify-content: center;   
-    display: flex;
-    align-items: center;
+  
+.fa{
+    color: #445162;
+    background: #FFFFFF;
     height: 51px;
     width: 51px;
     border-radius: 50%;
-    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 10px;
 }
-.fa{
-    color: #445162;
 }
